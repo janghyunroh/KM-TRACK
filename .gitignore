@@ -28,7 +28,11 @@ config.txt
 Output/
 KM_TRACK_Setup.exe
 
-### 6. IDE 설정 파일 (선택 사항) ###
+### 6. 테스트 폴더 ###
+# 더미 데이터 생성 등 로컬 테스트용 스크립트
+test/
+
+### 7. IDE 설정 파일 (선택 사항) ###
 # VSCode나 파이참 설정 파일
 .vscode/
 .idea/
