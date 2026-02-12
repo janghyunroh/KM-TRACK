@@ -1,0 +1,10 @@
+# GUI 및 그래프 그리기에 필요
+matplotlib
+Pillow
+
+# 키보드/마우스 수집 및 트레이 아이콘에 필요
+pynput
+pystray
+
+# 실행 파일 빌드에 필요 (개발자용)
+pyinstaller
