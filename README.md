@@ -15,7 +15,7 @@
 
 Click the link below to download the latest installer (`KM_TRACK_Setup.exe`).
 
-👉 **[Download Latest Version (Click Here)](https://github.com/janghyunroh/KM-TRACK/releases/download/v1.0.0/KM_TRACK_Setup.exe)**
+👉 **[Download Latest Version (Click Here)](https://github.com/janghyunroh/KM-TRACK/releases/latest/download/KM_TRACK_Setup.exe)**
 
 > **Note:** If a Windows security warning (SmartScreen) appears, click **'More Info' -> 'Run anyway'**. (This occurs because the installer is not signed by a commercial certificate.)
 

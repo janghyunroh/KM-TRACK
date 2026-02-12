@@ -15,7 +15,7 @@
 
 아래 링크를 클릭하여 최신 설치 프로그램(`KM_TRACK_Setup.exe`)을 다운로드하세요.
 
-👉 **[최신 버전 다운로드 (Click Here)](https://github.com/janghyunroh/KM-TRACK/releases/download/v1.0.0/KM_TRACK_Setup.exe)**
+👉 **[최신 버전 다운로드 (Click Here)](https://github.com/janghyunroh/KM-TRACK/releases/latest/download/KM_TRACK_Setup.exe)**
 
 > **참고:** 윈도우 보안 경고(SmartScreen)가 뜰 경우, **'추가 정보' -> '실행'**을 클릭해 주세요. (개인 개발자 서명이 없는 경우 발생할 수 있습니다.)
 
