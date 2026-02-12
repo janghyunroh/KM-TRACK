@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw
 
 # --- Matplotlib 스타일 설정 ---
 plt.style.use('seaborn-v0_8-whitegrid')
-plt.rcParams['font.family'] = 'Malgun Gothic'
+plt.rcParams['font.family'] = 'Arial'
 plt.rcParams['axes.unicode_minus'] = False
 
 # =========================================================
@@ -57,7 +57,7 @@ def load_or_ask_pc_name():
     input_root.attributes('-topmost', True)
     
     while True:
-        name = simpledialog.askstring("KM-TRACK 설정", "연구용 PC 식별 이름을 입력해주세요.\n(예: Participant_01, Office_A 등)", parent=input_root)
+        name = simpledialog.askstring("KM-TRACK Setup", "Please enter a PC identification name.\n(e.g., Participant_01, Office_A)", parent=input_root)
         if name and name.strip():
             PC_NAME = name.strip()
             try:
@@ -145,13 +145,13 @@ class MonitoringApp:
         nav_frame = tk.Frame(root, bg="white", pady=10)
         nav_frame.pack(side=tk.TOP, fill=tk.X)
         
-        tk.Label(nav_frame, text="⏱ 조회 기간:", bg="white", font=("Arial", 10, "bold")).pack(side=tk.LEFT, padx=(20, 10))
+        tk.Label(nav_frame, text="⏱ Time Range:", bg="white", font=("Arial", 10, "bold")).pack(side=tk.LEFT, padx=(20, 10))
         
         self.time_range = tk.StringVar(value="30m")
         style = ttk.Style()
         style.configure('TRadiobutton', background='white', font=('Arial', 10))
         
-        modes = [("1분", "1m"), ("30분", "30m"), ("6시간", "6h"), ("24시간", "24h")]
+        modes = [("1 Min", "1m"), ("30 Min", "30m"), ("6 Hours", "6h"), ("24 Hours", "24h")]
         for text, mode in modes:
             ttk.Radiobutton(nav_frame, text=text, variable=self.time_range, 
                             value=mode, command=self.update_graphs).pack(side=tk.LEFT, padx=10)
@@ -262,7 +262,7 @@ def create_image():
     return image
 
 def setup_tray():
-    menu = pystray.Menu(item('모니터링 열기', open_gui, default=True), item('종료', quit_app))
+    menu = pystray.Menu(item('Open Monitor', open_gui, default=True), item('Exit', quit_app))
     icon = pystray.Icon("KM-TRACK", create_image(), "KM-TRACK (HAR Monitor)", menu)
     icon.run()
 
@@ -271,7 +271,7 @@ if __name__ == "__main__":
     my_mutex = ctypes.windll.kernel32.CreateMutexW(None, False, mutex_name)
     if ctypes.windll.kernel32.GetLastError() == 183:
         temp = tk.Tk(); temp.withdraw()
-        messagebox.showwarning("알림", "KM-TRACK이 이미 실행 중입니다.")
+        messagebox.showwarning("Notice", "KM-TRACK is already running.")
         sys.exit(0)
 
     load_or_ask_pc_name()

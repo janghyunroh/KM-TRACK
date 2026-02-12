@@ -26,7 +26,7 @@ config.txt
 ### 5. 설치 프로그램 제작 결과물 (Inno Setup) ###
 # 설치 파일은 소스코드가 아니므로 Releases에 따로 올리는 게 원칙
 Output/
-HAR_Sensor_Setup.exe
+KM_TRACK_Setup.exe
 
 ### 6. IDE 설정 파일 (선택 사항) ###
 # VSCode나 파이참 설정 파일
