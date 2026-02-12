@@ -2,6 +2,8 @@
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue.svg) ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
+<img src="./image.png"/>
+
 **K**eyboard & **M**ouse **T**race for **R**ecognition of **A**ctivity **C**omputing **K**ernel
 
 KM-TRACK은 사용자의 키보드 및 마우스 사용량을 실시간으로 수집하고 모니터링하여 **HAR (Human Activity Recognition)** 연구 데이터셋을 구축하기 위한 전문 도구입니다.
