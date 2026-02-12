@@ -1,6 +1,6 @@
 [Setup]
 AppName=KM-TRACK
-AppVersion=1.0
+AppVersion=1.0.1
 DefaultDirName={autopf}\KM-TRACK
 DefaultGroupName=KM-TRACK
 UninstallDisplayName=KM-TRACK (Keyboard & Mouse HAR Tracker)

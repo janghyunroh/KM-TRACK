@@ -17,6 +17,8 @@ import pystray
 from pystray import MenuItem as item
 from PIL import Image, ImageDraw
 
+APP_VERSION = "1.0.1"
+
 # --- Matplotlib 스타일 설정 ---
 plt.style.use('seaborn-v0_8-whitegrid')
 plt.rcParams['font.family'] = 'Arial'
@@ -138,7 +140,7 @@ def start_sensor():
 class MonitoringApp:
     def __init__(self, root):
         self.root = root
-        self.root.title(f"KM-TRACK Dashboard - [{PC_NAME}]")
+        self.root.title(f"KM-TRACK v{APP_VERSION} Dashboard - [{PC_NAME}]")
         self.root.geometry("1000x850")
         self.root.protocol("WM_DELETE_WINDOW", self.hide_window)
 
@@ -263,7 +265,7 @@ def create_image():
 
 def setup_tray():
     menu = pystray.Menu(item('Open Monitor', open_gui, default=True), item('Exit', quit_app))
-    icon = pystray.Icon("KM-TRACK", create_image(), "KM-TRACK (HAR Monitor)", menu)
+    icon = pystray.Icon("KM-TRACK", create_image(), f"KM-TRACK v{APP_VERSION}", menu)
     icon.run()
 
 if __name__ == "__main__":
